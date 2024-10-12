@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chapter01.css">
+    <title>chapter01</title>
+
+<!-- 7. Practice placement of <script></script> element in
+following sections of your project in exercise 6:
+ -->
+                <!-- a. Script placed in the Head section -->
+                <script>
+                    console.log("Script in the Head section");
+                </script>
+    
+</head>
+<body>
+
+                <!-- b. Script placed in Body (before your page’s HTML) -->
+                <script>
+                    console.log("Script before the page's HTML");
+                </script>
+
+
+    <header>
+        <h1>Welcome to My Project</h1>
+    </header>
+    <main>
+        <p>This is a simple example of using alerts in an HTML project.</p>
+        <button onclick="showAlert()">Click Me!</button>
+        <button onclick="twoAlert()">Click Me!</button>
+
+                <!-- c. Script placed in Body (inside your page’s HTML) -->
+                <script>
+                    function twoAlert() {
+                        alert("Hello! Welcome to my project.");
+                    }
+                    console.log("Script inside the page's HTML");
+                </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Project</p>
+    </footer>
+
+                <!-- d. Script placed in Body (after your page’s HTML) -->
+                <script>
+                    console.log("Script after the page's HTML");
+                </script>
+
+
+    
+    <script>
+        // 6. Make use of alerts in your new/existing HTML & CSS project.
+        function showAlert() {
+            alert("Hello! Welcome to my project.");
+        }
+    </script>
+    <script src="./chapter01.js"></script>
+</body>
+</html>
